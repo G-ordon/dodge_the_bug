@@ -1,0 +1,39 @@
+/* Reset body margins to prevent unnecessary scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling to keep the game centered */
+    font-family: Arial, sans-serif; /* Set a clean font for any text */
+    background: linear-gradient(to bottom, #87CEEB, #4682B4); /* Sky-like gradient */
+    color: #fff; /* White text for visibility */
+  }
+  
+  /* Style the canvas to fit the browser window */
+  canvas {
+    display: block; /* Remove extra spacing around the canvas */
+    width: 100vw; /* Set canvas to the full width of the viewport */
+    height: 100vh; /* Set canvas to the full height of the viewport */
+  }
+  
+  /* Optional styling for game-over or additional messages */
+  .game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    color: #ff0000; /* Red color for game-over text */
+  }
+  
+  .restart {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff; /* White text for restart message */
+    cursor: pointer;
+  }
+  
